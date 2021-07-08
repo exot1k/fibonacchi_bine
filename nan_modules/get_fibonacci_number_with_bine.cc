@@ -12,7 +12,7 @@ double get_number_bine(unsigned int n)
     return round(fib);
 }
 
-  // Принимает позицую числа фиббоначи из JS и вызывает функцию для получения его значения
+  // Принимает позицую числа Фибоначчи из JS и вызывает функцию для получения его значения
   NAN_METHOD(get_fibonacci_number) {
     Nan::Maybe<double> value = Nan::To<double>(info[0]);
     Local<Number> retval = Nan::New(get_number_bine(value.FromJust()));
